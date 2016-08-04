@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from make_db_file import loadDbase
+from make_db_file import loadDbase, storeDbase
 db = loadDbase()
-for key in db:
-	print(key, '=>\n	', db[key])
-print(db['sue']['name']
+db['sue']['pay'] *= 1.10
+db['tom']['name'] = 'Tom Tom'
+storeDbase(db)
